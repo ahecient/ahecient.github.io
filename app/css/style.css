@@ -5,6 +5,9 @@
   .navigation li, .social-link li {
     display: inline-block; }
 
+.navigation li a, .footer {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 .header {
   display: grid;
   grid-template-columns: 280px 1105px 180px;
@@ -134,9 +137,8 @@
   .navigation li {
     padding-right: 40px; }
     .navigation li a {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: #a8a8a8;
       font-size: 25px;
+      color: #a8a8a8;
       text-decoration: none; }
       .navigation li a:hover {
         color: #a12424; }
@@ -150,7 +152,6 @@
 
 .footer {
   background: black;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #a12424;
   font-size: 15px; }
   .footer div {

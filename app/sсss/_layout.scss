@@ -10,7 +10,9 @@
     li{
         padding-right:40px;
         a {
-            @include font(25px, $light-gray);
+            @extend %font;
+            font-size: 25px;
+            color: $light-gray;
             text-decoration: none;
             &:hover{
                 color: $deep-red;
@@ -32,7 +34,9 @@
 
 .footer{
     background: $color-layout;
-    @include font(15px, $deep_red);
+    @extend %font;
+    color: $deep-red;
+    font-size: 15px;
     div{
         margin-left: 10px;
         margin-right: 10px;
