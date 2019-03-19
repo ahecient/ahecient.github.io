@@ -7,7 +7,7 @@ gulp.task('minCss', function () {
     return gulp.src('app/css/style.css')    
        .pipe(csso()) 
        .pipe(rename({ suffix: ".min" })) 
-       .pipe(gulp.dest('./app/css')); 
+       .pipe(gulp.dest('./dist/css')); 
 });
 
 gulp.task('test1', function(){
