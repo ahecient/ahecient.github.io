@@ -10,7 +10,6 @@
     li{
         padding-right:40px;
         a {
-            @extend %font;
             font-size: 25px;
             color: $light-gray;
             text-decoration: none;
@@ -34,7 +33,6 @@
 
 .footer{
     background: $color-layout;
-    @extend %font;
     color: $deep-red;
     font-size: 15px;
     div{

@@ -1,12 +1,10 @@
 .navigation, .social-link {
   list-style: none;
   margin: 0;
-  padding-left: 0; }
+  padding-left: 0;
+  padding-bottom: 15px; }
   .navigation li, .social-link li {
     display: inline-block; }
-
-.navigation li a, .footer {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
 .header {
   display: grid;
@@ -229,4 +227,5 @@
 
 body {
   margin: 0;
-  background: black; }
+  background: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
