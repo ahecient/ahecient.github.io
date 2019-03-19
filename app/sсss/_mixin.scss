@@ -9,11 +9,8 @@
 %font{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-%font_light_25{
-    @extend %font;
-    font-size: 25px;
-    color: $light-gray;
-}
+
+
 
 @mixin list_vertical(){
     list-style: none;
