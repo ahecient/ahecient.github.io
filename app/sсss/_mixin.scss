@@ -35,33 +35,17 @@
     text-align:center;
 }
 
-@mixin list_vertical(){
-    list-style: none;
-    margin: 0;
-    padding-left:0;    
-}
-
-@mixin font($font-size, $color) {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: $color;
-    font-size: $font-size;
-}
-
-@mixin grid($grid-template-columns, $justify-content, $align-items, $grid-gap){
-    display: grid;
-    grid-template-columns: $grid-template-columns;
-    grid-gap: $grid-gap;
-    justify-content: $justify-content;
-    align-items: $align-items;
-
-}
-
 %text-on-img{
     position: absolute;
     left:0;
     bottom:0;
     right:0;
     background: $text-background;
+}
+
+%font-15-dark{
+    color: $dark-gray;
+    font-size: 15px;
 }
 
 

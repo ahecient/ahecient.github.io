@@ -1,5 +1,5 @@
 .order{
-    margin-top: 100px;
+    margin-top: $margin-top-content;
     .h1-order{
         @extend %h1-red;
     }
@@ -15,7 +15,7 @@
             padding: 15px;
             font-size: 15px;
             color: $dark-gray;
-            @include font(15px, $dark-gray);
+           @extend %font-15-dark;
         }
         .button{
         background: $deep-red;

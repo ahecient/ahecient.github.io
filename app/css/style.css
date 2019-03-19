@@ -36,6 +36,10 @@
   right: 0;
   background: rgba(255, 255, 255, 0.7); }
 
+[class^='filter-parameters-'] li, .order .form-order input, .order .form-order textarea {
+  color: #747474;
+  font-size: 15px; }
+
 .header {
   display: grid;
   grid-template-columns: 280px 1105px 180px;
@@ -110,13 +114,8 @@
   list-style: none;
   margin: 0;
   padding-left: 0; }
-  [class^='filter-parameters-'] li {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #a8a8a8;
-    font-size: 16px; }
 
 .filter-header {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: #a12424;
   font-size: 20px; }
 
@@ -175,10 +174,7 @@
       border: none;
       padding: 15px;
       font-size: 15px;
-      color: #747474;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      color: #747474;
-      font-size: 15px; }
+      color: #747474; }
     .order .form-order .button {
       background: #a12424;
       width: 530px;
@@ -192,9 +188,8 @@
     background: black; }
   .price .d1, .price .d2 {
     background: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
-    font-size: 20px; }
+    font-size: 20px;
+    color: black; }
     .price .d1 div, .price .d2 div {
       text-align: center;
       padding: 15px; }

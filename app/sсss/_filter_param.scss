@@ -1,11 +1,14 @@
 [class^='filter-parameters-']{
-    @include list_vertical();
+    list-style: none;
+    margin: 0;
+    padding-left:0;  
     li{
-        @include font(16px, $light_gray);
+        @extend %font-15-dark;
     }
 }
 
 .filter-header{
-    @include font(20px, $deep_red);
+    color: $deep_red;
+    font-size: 20px;
 }
 
