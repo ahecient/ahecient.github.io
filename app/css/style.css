@@ -1,3 +1,11 @@
+.navigation, .social-link {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 25px; }
+  .navigation li, .social-link li {
+    display: inline-block; }
+
 .header {
   display: grid;
   grid-template-columns: 280px 1105px 180px;
@@ -119,19 +127,11 @@
   display: block; }
 
 .header {
-  padding: 20px 0px 10px 0px; }
-
-.header {
-  background: black; }
+  background: black;
+  padding: 10px 0px 10px 0px; }
 
 .navigation {
-  text-align: center;
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 25px; }
-  .navigation li {
-    display: inline-block; }
+  text-align: center; }
   .navigation li {
     padding-right: 40px; }
     .navigation li a {
@@ -142,15 +142,8 @@
       .navigation li a:hover {
         color: #a12424; }
 
-.social-link {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 25px; }
-  .social-link li {
-    display: inline-block; }
-  .social-link li {
-    padding-right: 15px; }
+.social-link li {
+  padding-right: 15px; }
 
 .logo {
   margin-left: 15px;

@@ -1,16 +1,12 @@
-%header-padding{
-    padding: 20px 0px 10px 0px;
- }
-
 .header{
     background: $color-layout;
-    @extend %header-padding;
+    padding: 10px 0px 10px 0px;
 }
- 
+
 
 .navigation{
     text-align: center;
-    @include list_horizontal();
+    @extend %list_horizontal;
     li{
         padding-right:40px;
         a {
@@ -24,7 +20,7 @@
 }
 
 .social-link{
-    @include list_horizontal();
+    @extend %list_horizontal;
     li{
         padding-right:15px;
     }
