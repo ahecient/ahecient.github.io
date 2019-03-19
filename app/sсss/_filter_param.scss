@@ -1,0 +1,11 @@
+[class^='filter-parameters-']{
+    @include list_vertical();
+    li{
+        @include font(16px, $light_gray);
+    }
+}
+
+.filter-header{
+    @include font(20px, $deep_red);
+}
+

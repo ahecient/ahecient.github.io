@@ -1,0 +1,36 @@
+.price{
+    margin-top: $margin-top-content;
+    @include grid(700px 700px, center, start, 100px);
+    
+    .h1-price{
+        @include h1-class(white);
+        margin:0px;
+        padding:20px;
+        background: black;
+    }
+    .d1, .d2{
+        
+        @include grid(350px 350px, none,none, 0px);
+        div{
+            text-align: center;
+            padding:15px;
+            &:nth-child(4n-1),&:nth-child(4n+0){
+                background: $more-light-gray;
+            }
+            &:nth-child(2){
+                background: $deep-red;
+                @include font(22px,white);
+            } 
+            &:nth-child(3){
+                @extend div:nth-child(2);
+            }
+        }
+        background: white;
+        @include font(20px, black);
+    }
+    .h1-price{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+
+    }
+}

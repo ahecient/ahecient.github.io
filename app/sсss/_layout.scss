@@ -1,0 +1,47 @@
+.header{
+    background: $color-layout;
+    @include grid(280px 1105px 180px, center, end, 0px);
+    padding: 10px 0px 10px 0px;
+}
+
+
+.navigation{
+    text-align: center;
+    @include list_horizontal();
+    li{
+        padding-right:40px;
+        a {
+            @include font(25px, $light-gray);
+            text-decoration: none;
+            &:hover{
+                color: $deep-red;
+            }
+        }       
+    }
+}
+
+.social-link{
+    @include list_horizontal();
+    li{
+        padding-right:15px;
+    }
+}
+.logo{
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+
+.footer{
+    background: $color-layout;
+    @include grid(782px 783px, space-around, end, 0px);
+    @include font(15px, $deep_red);
+    div{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    .developer{
+        text-align: end;
+    }
+}
+

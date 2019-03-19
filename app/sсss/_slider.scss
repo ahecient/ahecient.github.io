@@ -1,0 +1,17 @@
+.slider_container{
+    position: relative;
+    width: 1565px;
+    height: 800px;
+    overflow: hidden;
+    .slider{
+        position: relative;
+        width: 10000px;
+        height: 800px;
+        img{
+            float:left;
+        }
+        .text{
+            @include text-on-img(30%, $text-background, block);
+        }
+    }
+   // .prv_b, .nxt_b{}

@@ -1,0 +1,14 @@
+@import 'var';
+@import 'mixin';
+@import 'filter_param';
+@import 'content-sidebar';
+@import 'layout';
+@import 'order';
+@import 'price';
+@import 'contact';
+
+
+body{
+    margin: 0;
+    background: black;
+}

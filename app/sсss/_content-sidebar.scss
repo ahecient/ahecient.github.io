@@ -1,0 +1,64 @@
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+
+.wrapper {
+    @include grid(200px 450px 450px 450px, center, none, 5px);
+    background: black;
+    grid-template-areas:
+    "sidebar content content content";
+
+    .box {
+        &.content{
+            @include grid(450px 450px 450px, none, none, 0px);
+        }
+        &-a {
+            grid-column: 1 / span 2;
+        }
+        &-b {
+            grid-column: 3 ;
+            grid-row: 1 / span 2;
+        }
+        &-c {
+            grid-column: 1 ;
+            grid-row: 2 / span 2 ;
+        }
+        &-d {
+            grid-column: 2 ;
+            grid-row: 2 ;
+        }
+        &-e {
+            grid-column: 2 / span 2;
+            grid-row: 3 / span 2; 
+        }
+        &-f {
+            grid-column: 1;
+            grid-row: 4;
+        }
+        &-g {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+        }
+        &-h {
+            grid-column: 3;
+            grid-row: 5;
+        }
+    }
+}
+[class^='box-']{
+    position:relative;
+}
+
+.text{
+    @include text-on-img(30%, $text-background, none);
+}
+[class^='box-']:hover .text{
+    display: block;
+}
+
+

@@ -1,0 +1,28 @@
+.order{
+    margin-top: 100px;
+
+    @include grid(800px, center,center, 10px);
+    .h1-order{
+        @include h1-class($deep-red);
+    }
+    p{
+        @include p-gray();
+    }
+    .form-order{
+        text-align: center;
+        input, textarea{
+            width:500px;
+            margin: 15px;
+            border: none;
+            padding: 15px;
+            @include font(15px, $dark-gray);
+        }
+        .button{
+        background: $deep-red;
+        width: 530px;
+        color: white;
+
+        }
+    }
+}
+

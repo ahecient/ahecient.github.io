@@ -1,0 +1,50 @@
+@mixin list_horizontal() {
+    list-style: none;
+    margin: 0;
+    padding-left:0;
+    li{
+        display: inline-block;
+    }
+    padding-bottom: 25px;
+}
+
+@mixin list_vertical(){
+    list-style: none;
+    margin: 0;
+    padding-left:0;    
+}
+
+@mixin font($font-size, $color) {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: $color;
+    font-size: $font-size;
+}
+
+@mixin grid($grid-template-columns, $justify-content, $align-items, $grid-gap){
+    display: grid;
+    grid-template-columns: $grid-template-columns;
+    grid-gap: $grid-gap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+
+}
+
+@mixin text-on-img($height, $background, $display){
+    height: $height;
+    position: absolute;
+    display: $display;
+    left:0;
+    bottom:0;
+    right:0;
+    background: $background;
+}
+
+@mixin h1-class($color){
+    @include font(34px,$color);
+    text-align:center;
+}
+
+@mixin p-gray(){
+    @include font(20px, $light-gray);
+     text-align:center;
+}
