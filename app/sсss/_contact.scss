@@ -1,10 +1,10 @@
 .contacts{
     margin-top: $margin-top-content;
     .h1-contact{
-        @include h1-class($deep-red);
+        @extend %h1-red;
     }
     p{
-        @include p-gray();
+        @extend %p-gray;
     }
     margin-bottom: 50px;
 }

@@ -18,6 +18,23 @@
     align-items: center;
 }
 
+%p-gray{
+    font-size: 20px;
+    color: $light-gray;
+    text-align:center;
+}
+
+%h1-red{
+    font-size:34px;
+    color: $deep-red;
+    text-align:center;
+}
+%h1-white{
+    font-size:34px;
+    color: white;
+    text-align:center;
+}
+
 @mixin list_vertical(){
     list-style: none;
     margin: 0;
@@ -39,22 +56,13 @@
 
 }
 
-@mixin text-on-img($height, $background, $display){
-    height: $height;
+%text-on-img{
     position: absolute;
-    display: $display;
     left:0;
     bottom:0;
     right:0;
-    background: $background;
+    background: $text-background;
 }
 
-@mixin h1-class($color){
-    @include font(34px,$color);
-    text-align:center;
-}
 
-@mixin p-gray(){
-    @include font(20px, $light-gray);
-     text-align:center;
-}
+

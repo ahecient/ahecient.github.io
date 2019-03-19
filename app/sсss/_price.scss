@@ -1,7 +1,7 @@
 .price{
     margin-top: $margin-top-content;
     .h1-price{
-        @include h1-class(white);
+        @extend %h1-white;
         margin:0px;
         padding:20px;
         background: black;
@@ -15,7 +15,8 @@
             }
             &:nth-child(2){
                 background: $deep-red;
-                @include font(22px,white);
+                font-size:20px;
+                color: white;
             } 
             &:nth-child(3){
                 @extend div:nth-child(2);

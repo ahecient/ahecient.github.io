@@ -1,10 +1,10 @@
 .order{
     margin-top: 100px;
     .h1-order{
-        @include h1-class($deep-red);
+        @extend %h1-red;
     }
     p{
-        @include p-gray();
+        @extend %p-gray;
     }
     .form-order{
         text-align: center;
@@ -13,6 +13,8 @@
             margin: 15px;
             border: none;
             padding: 15px;
+            font-size: 15px;
+            color: $dark-gray;
             @include font(15px, $dark-gray);
         }
         .button{

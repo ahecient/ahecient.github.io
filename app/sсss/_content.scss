@@ -8,7 +8,9 @@
 }
 
 .text{
-    @include text-on-img(30%, $text-background, none);
+    @extend %text-on-img;
+    height: 40%;
+    display: none;
 }
 [class^='box-']:hover .text{
     display: block;
