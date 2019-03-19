@@ -119,8 +119,10 @@
   display: block; }
 
 .header {
-  background: black;
   padding: 10px 0px 10px 0px; }
+
+.header {
+  background: black; }
 
 .navigation {
   text-align: center;

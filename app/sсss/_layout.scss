@@ -1,8 +1,12 @@
+%header-padding{
+    padding: 10px 0px 10px 0px;
+ }
+
 .header{
     background: $color-layout;
-    padding: 10px 0px 10px 0px;
+    @extend %header-padding;
 }
-
+ 
 
 .navigation{
     text-align: center;
