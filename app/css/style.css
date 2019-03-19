@@ -1,8 +1,7 @@
 .navigation, .social-link {
   list-style: none;
   margin: 0;
-  padding-left: 0;
-  padding-bottom: 25px; }
+  padding-left: 0; }
   .navigation li, .social-link li {
     display: inline-block; }
 
