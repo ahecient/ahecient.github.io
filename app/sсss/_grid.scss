@@ -1,8 +1,14 @@
 .header{
-    @include grid(280px 1105px 180px, center, end, 0px);
+    display: grid;
+    grid-template-columns: 280px 1105px 180px;
+    justify-content: center;
+    align-items: end;
 }
 .footer{
-    @include grid(782px 783px, space-around, end, 0px);
+    display: grid;
+    grid-template-columns: 782px 783px;
+    justify-content: space-around;
+    align-items: end;
 }
 .sidebar {
     grid-area: sidebar;
@@ -13,12 +19,16 @@
 }
 
 .wrapper {
-    @include grid(200px 450px 450px 450px, center, none, 5px);
+    display: grid;
+    grid-template-columns: 200px 450px 450px 450px;
+    grid-gap: 5px;
+    justify-content: center;
     grid-template-areas:
     "sidebar content content content";
     .box {
         &.content{
-            @include grid(450px 450px 450px, none, none, 0px);
+            display: grid;
+            grid-template-columns:450px 450px 450px;
         }
         &-a {
             grid-column: 1 / span 2;
@@ -55,12 +65,20 @@
 }
 
 .order{
-    @include grid(800px, center,center, 10px);
+    display: grid;
+    grid-template-columns: 800px;
+    grid-gap: 10px;
+    @extend %grid_center_center;
+    
 }
 .price{
-    @include grid(700px 700px, center, start, 100px);
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-gap: 100px;
+    justify-content: center;
+    align-items: start;
     .d1,.d2{
-        @include grid(350px 350px, none,none, 0px);
+        @extend %grid_350_350;
     }
 }
 .h1-price, .h1-contact{
@@ -68,5 +86,8 @@
     grid-row: 1;
 }
 .contacts{
-    @include grid(300px 300px, center, center, 50px);
+    @extend %grid_350_350;
+    grid-gap: 50px;
+    @extend %grid_center_center;
+    
 }

@@ -9,6 +9,15 @@
 }
 
 
+%grid_350_350 {
+    display: grid;
+    grid-template-columns: 350px 350px;
+}
+%grid_center_center{
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin list_vertical(){
     list-style: none;
     margin: 0;
