@@ -1,3 +1,9 @@
+.header{
+    @include grid(280px 1105px 180px, center, end, 0px);
+}
+.footer{
+    @include grid(782px 783px, space-around, end, 0px);
+}
 .sidebar {
     grid-area: sidebar;
 }
@@ -6,13 +12,10 @@
     grid-area: content;
 }
 
-
 .wrapper {
     @include grid(200px 450px 450px 450px, center, none, 5px);
-    background: black;
     grid-template-areas:
     "sidebar content content content";
-
     .box {
         &.content{
             @include grid(450px 450px 450px, none, none, 0px);
@@ -50,15 +53,20 @@
         }
     }
 }
-[class^='box-']{
-    position:relative;
-}
 
-.text{
-    @include text-on-img(30%, $text-background, none);
+.order{
+    @include grid(800px, center,center, 10px);
 }
-[class^='box-']:hover .text{
-    display: block;
+.price{
+    @include grid(700px 700px, center, start, 100px);
+    .d1,.d2{
+        @include grid(350px 350px, none,none, 0px);
+    }
 }
-
-
+.h1-price, .h1-contact{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+.contacts{
+    @include grid(300px 300px, center, center, 50px);
+}

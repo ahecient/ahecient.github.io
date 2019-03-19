@@ -1,6 +1,5 @@
 .header{
     background: $color-layout;
-    @include grid(280px 1105px 180px, center, end, 0px);
     padding: 10px 0px 10px 0px;
 }
 
@@ -33,7 +32,6 @@
 
 .footer{
     background: $color-layout;
-    @include grid(782px 783px, space-around, end, 0px);
     @include font(15px, $deep_red);
     div{
         margin-left: 10px;

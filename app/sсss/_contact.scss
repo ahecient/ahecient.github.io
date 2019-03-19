@@ -1,9 +1,7 @@
 .contacts{
-    @include grid(300px 300px, center, center, 50px);
     margin-top: $margin-top-content;
     .h1-contact{
         @include h1-class($deep-red);
-        grid-column: 1 / span 2;
     }
     p{
         @include p-gray();
